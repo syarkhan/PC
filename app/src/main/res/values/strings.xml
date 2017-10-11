@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProjectCity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="userImageUri"></string>
+    <string name="title_activity_main_nav">MainNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="GOOGLE_PLACES_API_KEY">AIzaSyBJIJvZbdR8ycuD8F8uwwtzEzizQeCG3qc</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

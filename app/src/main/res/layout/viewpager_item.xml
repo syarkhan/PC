@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView22"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.example.sheryarkhan.projectcity.Utils.ImagesAndVideosViewPager
+        android:id="@+id/imagesAndVideosViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!--<com.example.sheryarkhan.projectcity.Utils.VideosViewPager-->
+
+
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:id="@+id/videosViewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>

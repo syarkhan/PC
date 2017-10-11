@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sheryarkhan.projectcity.activities.EditProfileActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="643dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/feed_item_rounded_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/constraintLayout7">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutHead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/user2"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+            <ImageView
+                android:id="@+id/btnUploadImage"
+                android:layout_width="38dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="7dp"
+                android:adjustViewBounds="true"
+                android:onClick="uploadImageBuilder"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/uploadphoto2"
+                app:layout_constraintBottom_toBottomOf="@+id/imgUser"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="0dp"
+                app:layout_constraintRight_toRightOf="@+id/imgUser" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutBody"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutHead">
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Enter Location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:drawableLeft="@android:drawable/ic_menu_mylocation"
+                android:drawablePadding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Your Name"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Your Email"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+            <EditText
+                android:id="@+id/editTextInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Bio"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:drawablePadding="10dp"
+                android:inputType="textMultiLine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

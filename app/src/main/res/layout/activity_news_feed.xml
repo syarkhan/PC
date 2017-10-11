@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sheryarkhan.projectcity.activities.NewsFeedActivity"
+    >
+
+    <!--<ListView-->
+    <!--android:id="@+id/news_feed_listView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:divider="@null" />-->
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@color/white"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:id="@+id/constraintLayout">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/camera"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--app:layout_constraintVertical_bias="0.0"-->
+            <!--android:id="@+id/imageView" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/postNews"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="Share your news"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintVertical_bias="0.521"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/imageView"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginStart="60dp" />-->
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/recyclerViewProgressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txtNetworkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cannot load data"
+            android:textSize="20sp"
+            android:background="#eee"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_feed_recyclerview"
+            android:visibility="visible"
+            android:divider="@null"
+            android:overScrollMode="never"
+            android:background="#e5e7ef"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintRight_toRightOf="parent">
+        <include layout="@layout/layout_bottom_navigation"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.sheryarkhan.projectcity.Activities.NewsFeedActivity"-->
+    <!--android:background="@color/feed_bg"-->
+    <!--&gt;-->
+
+<!--&lt;!&ndash;<ListView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/news_feed_listView"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:divider="@null" />&ndash;&gt;-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@color/white"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:id="@+id/constraintLayout">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/camera"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--app:layout_constraintVertical_bias="0.0"-->
+            <!--android:id="@+id/imageView" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/postNews"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="What's your news?"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintVertical_bias="0.521"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/imageView"-->
+            <!--android:layout_marginLeft="17dp"-->
+            <!--android:layout_marginStart="17dp" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/constraintLayout"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintVertical_bias="1.0">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/news_feed_recyclerview"-->
+            <!--android:divider="@null"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+
+
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/constraintLayout2"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent">-->
+
+        <!--&lt;!&ndash;<android.support.design.widget.BottomNavigationView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/bottomNavigation"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginBottom="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:itemBackground="@color/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:itemIconTint="@drawable/nav_item_color_state"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:itemTextColor="@drawable/nav_item_color_state"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_constraintHorizontal_bias="0.5"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_constraintRight_toRightOf="parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_constraintVertical_bias="1.0"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:menu="@menu/botton_navigation_main">&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;</android.support.design.widget.BottomNavigationView>&ndash;&gt;-->
+        <!--<include layout="@layout/layout_bottom_navigation"/>-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
